@@ -7,7 +7,7 @@
     <title>Approval testing</title>
 
     <link rel="stylesheet" href="css/reveal.css">
-    <link rel="stylesheet" href="css/theme/black.css">
+    <link rel="stylesheet" href="css/theme/simple.css">
 
     <!-- Theme used for syntax highlighting of code -->
     <link rel="stylesheet" href="lib/css/zenburn.css">
@@ -25,35 +25,51 @@
 <div class="reveal">
     <div class="slides">
         <section>
-            <h1>Approval Testing</h1>
+            <img src="static/approvalTestLogo.png" style="border: 0px; zoom: 1.5">
+            <h1>Approval Testing </h1>
+
+
             Qu'est-ce?
         </section>
-        <section><h2>Librairie d'assertion</h2></section>
         <section>
-            <h2>Apporte</h2>
-            <p>Diff visuelle</p>
-            <p>Assertion simplifié</p>
+            <h2>Librairie d'assertion</h2>
+            <div style="text-decoration-line: line-through"><code>assertEquals(a, b)</code></div>
+        </section>
+        <section>
+            <div style="float: left">
+                <h2>Apporte</h2>
+                <p>Diff visuelle</p>
+                <p>Assertion simplifié</p>
+            </div>
+            <div style="float: right">
+                <img style="zoom: 30%; border: 0px" src="static/eye-magnifier.jpg">
+            </div>
         </section>
         <section>Demo</section>
         <section>
-            <h2>Tout est string!</h2>
-            <p>Stringify objects</p>
-            <p>Stringify side-effects</p>
+            <h2>Tout est String!</h2>
+            <p>Objets => String</p>
+            <p>REST => String</p>
+            <p>Fichiers => String</p>
+            <p>Bases de données => String</p>
+            <p>-</p>
+            <p>String => diff tool</p>
+
+
         </section>
         <section>
             <h2>Conséquences</h2>
             <p>Couverture de test totale</p>
-            <p> > 100 % de lignes</p>
-            <p> </p>
+            <p> > 100 % des lignes</p>
+            <p>- </p>
             <p>Bien pour refactoring</p>
             <p>Mauvais pour fonctionnalités</p>
         </section>
         <section>
-            <h2>Une approche</h2>
+            <h2>Le meilleur des deux mondes</h2>
             <p>Préparer en refactorant</p>
             <p>Ajouter en TDD</p>
             <p>Brancher, et valider la référence</p>
-            <p>Recommencer</p>
         </section>
     </div>
 </div>
