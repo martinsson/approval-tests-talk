@@ -12,6 +12,14 @@
     <!-- Theme used for syntax highlighting of code -->
     <link rel="stylesheet" href="lib/css/zenburn.css">
 
+    <style>
+        .green {
+            color: green;
+        }
+        .red {
+            color: red;
+        }
+    </style>
     <!-- Printing and PDF exports -->
     <script>
         var link = document.createElement('link');
@@ -58,12 +66,13 @@
 
         </section>
         <section>
+
             <h2>Conséquences</h2>
-            <p>Couverture de test totale</p>
-            <p> > 100 % des lignes</p>
+            <p class="green">Couverture de test totale</p>
+            <p class="green"> > 100 % des lignes</p>
             <p>- </p>
-            <p>Bien pour refactoring</p>
-            <p>Mauvais pour fonctionnalités</p>
+            <p class="green">Bien pour refactoring</p>
+            <p class="red">Mauvais pour fonctionnalités</p>
         </section>
         <section>
             <h2>Le meilleur des deux mondes</h2>
