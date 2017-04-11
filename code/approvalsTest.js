@@ -1,5 +1,6 @@
 "use strict"
 require('approvals').mocha();
+let fs = require('fs')
 
 class MessageBody {
 
@@ -25,17 +26,33 @@ class Message {
     bodyFor(recipient) {
         return new MessageBody(recipient)
     }
+
+    writeBodyToFile(recipient) {
+        let content = this.textFor(recipient)
+        fs.writeFileSync("/tmp/messageBody.txt", content)
+    }
 }
 
 describe("Message", function () {
     let message = new Message()
 
-    it("is what it is", function () {
-        this.verify(message.textFor("Paul"))
+    it("works for strings", function () {
+        let messageString = message.textFor("Paul")
+
+        this.verify(messageString)
     })
 
     // it("works with objects", function () {
-    //     this.verifyAsJSON(message.bodyFor("Paul"))
+    //     let messageBody = message.bodyFor("Paul")
+    //
+    //     this.verifyAsJSON(messageBody)
+    // })
+    //
+    // it("works with files", function () {
+    //     message.writeBodyToFile("Augustin")
+    //
+    //     let resultFile = fs.readFileSync("/tmp/messageBody.txt").toString()
+    //     this.verify(resultFile)
     // })
 })
 
