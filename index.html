@@ -19,6 +19,9 @@
         .red {
             color: red;
         }
+        .noborder {
+            border: 0px;
+        }
     </style>
     <!-- Printing and PDF exports -->
     <script>
@@ -44,11 +47,16 @@
         <section>
             <div style="float: left">
                 <h2>Apporte</h2>
-                <p>Diff visuelle</p>
+
+                <br/>
+                <br/>
+                <br/>
+                <br/>
                 <p>Assertion simplifié</p>
                 <code style="font-size: x-large" >Approvals.verify(result)</code>
             </div>
             <div style="float: right">
+                <p>Diff visuelle</p>
                 <img style="zoom: 30%; border: 0px" src="static/eye-magnifier.jpg">
             </div>
         </section>
@@ -85,7 +93,7 @@
         <section>
             <h2>Ca fait envie!</h2>
             <p>
-                <img src="static/approvalTestLogo.png" >
+                <img src="static/approvalTestLogo.png" class="noborder" style="border: 0px; position: absolute; top: 25%; left: 25%">
                 <a href="http://approvaltests.com">approvaltests.com</a>
             </p>
             <p>Gros exemple</p>
